@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <meta charset="utf-8" />
+    <title>Einsendeaufgabe 3 Kontaktformular</title>
+ </head>
+ <body>
+
+  <form action="#">
+    <ul>
+      <li>
+      <label for="anrede"><b>Anrede:</b> Frau/Herr/Firma</label><br /> 
+      <select name="anrede" id="anrede" size="1"> 
+        <option value="anrede0"></option>
+        <option value="anrede1">Frau</option>
+        <option value="anrede2">Herr</option>
+        <option value="anrede3">Firma</option>
+      </select>
+      </li><br /> 
+   
+    <li>
+      <label for="organisation"><b>Name der Firma/Organisation:*</b></label><br /> 
+      <input type="text" name="organisation" id="organisation" placeholder="..." size="" required/>
+    </li><br /> 
+
+    <li>
+      <label for="titel"><b>Titel:</b></label><br /> 
+      <input type="text" name="titel" id="titel" placeholder="..." size=""/>
+    </li><br /> 
+
+    <li>
+      <label for="vorname"><b>Vorname:*</b></label><br /> 
+      <input type="text" name="vorname" id="vorname" placeholder="..." size="" required/>
+    </li><br /> 
+
+    <li>
+      <label for="nachname"><b>Nachname:*</b></label><br /> 
+      <input type="text" name="nachname" id="nachname" placeholder="..." size="" required/>
+    </li><br /> 
+
+    <li>
+      <label for="email"><b>E-Mail-Adresse:*</b></label><br /> 
+      <input type="text" name="email" id="email" placeholder="..." size="" required/>
+    </li><br /> 
+
+    <li>
+      <label for="strasse"><b>Straße/Hausnummer:</b></label><br /> 
+      <input type="text" name="strasse" id="strasse" placeholder="..." size=""/>
+    </li><br /> 
+
+    <li>
+      <label for="ort"><b>PZL/Ort:</b></label><br /> 
+      <input type="text" name="ort" id="ort" placeholder="..." size=""/>
+    </li><br /> 
+
+    <li>
+      <label for="land"><b>Land:</b></label><br /> 
+      <input type="text" name="land" id="land" placeholder="..." size=""/>
+    </li><br /> 
+
+    <li>
+      <label for="telefon"><b>Telefon:*</b></label><br /> 
+      <input type="text" name="telefon" id="telefon" placeholder="..." size="" required/>
+    </ul><br /> 
+
+    <li>
+      <label for="fax"><b>Fax:</b></label><br /> 
+      <input type="text" name="fax" id="fax" placeholder="..." size=""/>
+    </li><br /> 
+
+    <li>
+      <label for="nachricht"><b>Ihre Nachricht:*</b></label><br /> 
+      <textarea name="nachricht" id="nachricht" placeholder="..." rows="5" cols="21" required></textarea>
+    </li><br /> 
+
+    <li>
+      <b>Bitte senden Sie mir folgende Unterlagen zu: </b><i>(Mehrfachauswahl möglich)</i><br /> 
+      <input type="checkbox" name="unterlagen1" id="unterlagen1" value="katalog"/>
+      <label for="unterlagen1">Katalog</label><br />
+      <input type="checkbox" name="unterlagen2" id="unterlagen2" value="flyer"/>
+      <label for="unterlagen2">Flyer</label><br />
+      <input type="checkbox" name="unterlagen3" id="unterlagen3" value="usb"/>
+      <label for="unterlagen3">Demo-USB-Stick</label><br />
+    </li><br /> 
+
+    <li>
+      <b>Wie haben Sie von unserem Shop erfahren? </b><i>(keine Mehrfachauswahl möglich)</i><br /> 
+      <input type="radio" name="erfahrung" id="erfahrung1" value="suchmaschine"/>
+      <label for="unterlagen1">Suchmaschine</label><br />
+      <input type="radio" name="erfahrung" id="erfahrung2" value="anzeige"/>
+      <label for="unterlagen2">Anzeige</label><br />
+      <input type="radio" name="erfahrung" id="erfahrung3" value="artikel"/>
+      <label for="unterlagen3">Artikel in Zeitung/Zeitschrift</label><br />
+      <input type="radio" name="erfahrung" id="erfahrung4" value="empfehlung"/>
+      <label for="unterlagen4">persönliche Empfehlung</label><br />
+      <input type="radio" name="erfahrung" id="erfahrung5" value="sonstiges"/>
+      <label for="unterlagen5">sonstiges, und zwar</label>
+      <input type="text" name="erfahrung" id="erfahrung" placeholder="..." size=""/>
+    </li><br /> 
+
+    <li>
+      <input type="checkbox" name="newsletter" id="newsletter" value="newsletter" checked/>
+      <label for="newsletter"><b>Bitte senden Sie mir den Newsletter zu</b></label>
+    </li><br /> 
+  </ul>
+
+  <input type="reset" name="zuruecksetzen" id="zuruecksetzen" value="Zurücksetzen"/>
+  <input type="submit" name="senden" id="senden" value="Senden"/>
+
+  </form>
+
+ </body>
+</html>
